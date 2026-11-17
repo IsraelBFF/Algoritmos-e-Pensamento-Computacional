@@ -4,17 +4,13 @@
 void main(){
     int pontuacoes[5];
 
-    while(1){
-        for(int i = 0 ; i < 5 ; i++){
-            printf("Pontuacao %d: ", i+1);
-            scanf("%d", &pontuacoes[i]);
-
-            if(pontuacoes[i] < 0){
-                printf("Pontuacao invalida!\n");
-                break;
-            }
-        }
+    for(int i = 0 ; i < 5 ; i++){
+        printf("Pontuacao %d: ", i+1);
+        scanf("%d", &pontuacoes[i]);
     }
 
-
+    for(int i = 4 ; i >= 0 ; i--){
+        printf("%d ", pontuacoes[i]);
+    }
+    printf("\n");
 }
